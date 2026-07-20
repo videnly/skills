@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "videnly": {
+      "type": "http",
+      "url": "https://mcp.videnly.com"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+interface:
+  display_name: "Videnly Faceless Video"
+  short_description: "Prepare and generate Videnly faceless videos"
+  default_prompt: "Use $videnly-faceless-video to prepare, estimate, and generate my faceless-video project."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "videnly"
+      description: "Videnly media generation MCP server"
+      transport: "streamable_http"
+      url: "https://mcp.videnly.com"

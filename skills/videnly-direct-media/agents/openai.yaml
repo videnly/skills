@@ -1,0 +1,12 @@
+interface:
+  display_name: "Videnly Direct Media"
+  short_description: "Generate Videnly images and videos safely"
+  default_prompt: "Use $videnly-direct-media to estimate and generate this image or video through Videnly."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "videnly"
+      description: "Videnly media generation MCP server"
+      transport: "streamable_http"
+      url: "https://mcp.videnly.com"

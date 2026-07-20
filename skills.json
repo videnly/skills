@@ -1,0 +1,18 @@
+{
+  "version": "1",
+  "repository": "https://github.com/videnly/skills",
+  "skills": [
+    {
+      "name": "videnly-direct-media",
+      "description": "Estimate, confirm, generate, monitor, and deliver standalone Videnly images and videos without spending credits before approval.",
+      "url": "https://raw.githubusercontent.com/videnly/skills/main/skills/videnly-direct-media/SKILL.md",
+      "tags": ["videnly", "image", "video", "generation", "credits", "confirmation"]
+    },
+    {
+      "name": "videnly-faceless-video",
+      "description": "Prepare, estimate, confirm, generate, and monitor an existing Videnly Faceless AI Video project.",
+      "url": "https://raw.githubusercontent.com/videnly/skills/main/skills/videnly-faceless-video/SKILL.md",
+      "tags": ["videnly", "faceless-video", "project", "generation", "credits"]
+    }
+  ]
+}
