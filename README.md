@@ -28,7 +28,42 @@ The MCP uses OAuth and restricts tools and data to the authenticated Videnly acc
 
 ## Install
 
-Install the repository with an Agent Skills-compatible client or copy the desired folder from `skills/` into that client's skills directory. The MCP connection must also be enabled and authenticated.
+Install from the public repository with the [Skills CLI](https://www.skills.sh/docs/cli):
+
+```bash
+npx skills add videnly/skills
+```
+
+The CLI discovers the included skills and installs them for supported agents. Depending on the detected client and terminal mode, it may install automatically or present a selector containing:
+
+- `videnly-direct-media`
+- `videnly-faceless-video`
+
+Install one skill globally:
+
+```bash
+npx skills add videnly/skills \
+  --skill videnly-direct-media \
+  --global
+```
+
+Install every skill non-interactively:
+
+```bash
+npx skills add videnly/skills --all
+```
+
+The Skills CLI supports Codex, Claude Code, Cursor, GitHub Copilot, and other Agent Skills-compatible clients.
+
+### MCP authentication
+
+Installing a skill does not universally configure or authenticate its MCP dependency. If the client does not configure it automatically from the included metadata, connect the Videnly MCP manually:
+
+```text
+https://mcp.videnly.com
+```
+
+The client will open Videnly's OAuth flow. Sign in and approve the requested permissions before using either skill.
 
 ## Repository catalog
 
